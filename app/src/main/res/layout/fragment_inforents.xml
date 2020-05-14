@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inforents"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.inforents.InforentsFragment">
+
+    <include
+        layout="@layout/fav_button" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-31dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgUserInfoRent"
+                        android:layout_width="69dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:src="@drawable/hoteles" />
+
+                    <TextView
+                        android:id="@+id/txtUserInfoRent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Usuario543"
+                        android:textSize="35sp"
+                        app:fontFamily="@font/andika"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.365"
+                        app:layout_constraintStart_toEndOf="@+id/imgUserInfoRent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtStreetNameInfoRents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:text="TextView"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toTopOf="@+id/materialCardView"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/imgUserInfoRent"
+                        app:layout_constraintVertical_bias="0.388" />
+
+                    <RatingBar
+                        android:id="@+id/rBRatingInfoRents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:isIndicator="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.647"
+                        app:layout_constraintStart_toEndOf="@+id/txtPriceInfoRents"
+                        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/materialCardView"
+                        android:layout_width="377dp"
+                        android:layout_height="217dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="5dp"
+                        android:theme="@style/Theme.MaterialComponents.DayNight"
+                        app:cardCornerRadius="30dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtUserInfoRent">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewPagerRent"
+                            android:layout_width="380dp"
+                            android:layout_height="match_parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.6"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/txtUserInfoRent" />
+
+                        <me.relex.circleindicator.CircleIndicator
+                            android:id="@+id/imgIndicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="90dp"
+                            app:ci_drawable="@drawable/circleindicatoe"
+                            app:layout_constraintBottom_toBottomOf="@+id/viewPagerRent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/viewPagerRent" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/txtPriceInfoRents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="24dp"
+                        android:text="TextView"
+                        android:textSize="25sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+                    <Button
+                        android:id="@+id/btnContactInfoRents"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="#00FFFFFF"
+                        android:hapticFeedbackEnabled="false"
+                        android:text="Enviar mensaje"
+                        android:textAllCaps="false"
+                        android:textColor="#24B71F"
+                        android:textIsSelectable="false"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.598"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rBRatingInfoRents" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="44dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="36dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toStartOf="@+id/btnContactInfoRents"
+                        app:layout_constraintHorizontal_bias="0.869"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtPriceInfoRents"
+                        app:srcCompat="@drawable/contact"
+                        tools:src="@drawable/contact" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

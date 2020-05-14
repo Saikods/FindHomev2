@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="160dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="81dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    app:layout_constraintEnd_toStartOf="@+id/txtTitleSignIn"
+                    app:layout_constraintHorizontal_bias="0.729"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/housesingin" />
+
+                <TextView
+                    android:id="@+id/txtTitleSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="28dp"
+                    android:gravity="center"
+                    android:text="@string/signin_title"
+                    android:textSize="28sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="86dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="14dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.515"
+                    app:layout_constraintStart_toEndOf="@+id/txtTitleSignIn"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/hotelsignin" />
+
+                <TextView
+                    android:id="@+id/txtSubtitleSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/sigin_subtitle"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/txtTitleSignIn" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/account_info" />
+
+            <EditText
+                android:id="@+id/txtEmailSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="7dp"
+                android:ems="10"
+                android:hint="@string/hint_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="5dp" />
+
+            <EditText
+                android:id="@+id/txtPasswordSigIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="7dp"
+                android:ems="10"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+
+
+            <EditText
+                android:id="@+id/txtRepeatPasswordSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="7dp"
+                android:ems="10"
+                android:hint="@string/repeat_password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/txtUserNameSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="7dp"
+                android:ems="10"
+                android:hint="@string/username"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/personal_info" />
+
+            <EditText
+                android:id="@+id/txtFirstNameSignIn"
+                android:layout_width="292dp"
+                android:layout_height="41dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/first_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtLastNameSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/last_name"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnDateSignIn"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_rounded"
+                android:text="@string/datepicker"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/txtDateViewSignIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="@string/nodate"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txtDniSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/dni"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtTelephoneSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/telephone"
+                android:inputType="phone" />
+
+            <Spinner
+                android:id="@+id/spinnerProvinces"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp" />
+
+            <EditText
+                android:id="@+id/txtTownSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/town"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtPostalCodeSignIn"
+                android:layout_width="292dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:ems="10"
+                android:hint="@string/postalcode"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cBTermsSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="3dp"
+                    android:text="@string/accept" />
+
+                <TextView
+                    android:id="@+id/txtTermsSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/terms"
+                    android:textColor="#1494D0"
+                    android:textStyle="italic" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignIn"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_rounded"
+                android:text="@string/endsignin" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

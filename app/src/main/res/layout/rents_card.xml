@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewRent"
+        android:layout_width="352dp"
+        android:layout_height="558dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="#4F58E340"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="-1dp"
+        app:cardMaxElevation="1dp"
+        app:cardPreventCornerOverlap="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            android:background="@drawable/rounded_edge"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Usuario543"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/andika" />
+
+            <TextView
+                android:id="@+id/txtStreetCardRent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="16sp"
+                app:fontFamily="@font/archivo_narrow" />
+
+            <ImageView
+                android:id="@+id/imgCardRent"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtDescriptionCardRent"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_margin="10dp"
+                android:lineSpacingExtra="4sp"
+                android:text="TextView"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                app:fontFamily="@font/archivo_narrow" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPriceCardRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textSize="25sp" />
+
+                <RatingBar
+                    android:id="@+id/rBarCardRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:isIndicator="true"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:scrollbarSize="1dp"
+                    android:stepSize="0.5"
+                    android:theme="@style/customRatingBar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

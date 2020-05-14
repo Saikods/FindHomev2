@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">FindHomev2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings using for Menu Items -->
+    <string name="menu_alquileres">Alquileres</string>
+    <string name="menu_upload">Publica tu alquiler</string>
+    <string name="menu_hotels">Hoteles</string>
+    <string name="menu_topsites">Top sitios</string>
+    <string name="menu_contactus">Contáctanos</string>
+    <string name="menu_login">Iniciar sesión</string>
+    <string name="menu_signin">Registrarse</string>
+    <string name="menu_userdetail">Ajustes</string>
+    <string name="title_activity_info_rents">InfoRents</string>
+
+    <!-- Strings for User Settings -->
+    <string name="change_photo">Sube una foto</string>
+    <string name="btn_save">Guardar cambios</string>
+    <string name="actual_photo">Imagen actual: </string>
+    <string name="account_info_detail">Mi cuenta:</string>
+    <string name="info">Cierta información no es posible modificarla sin contactar con nosotros</string>
+    <string name="important">*</string>
+
+    <!-- Other Strings -->
+    <string name="separation_line">Mi cuenta</string>
+    <string name="alert_logout">¿Estás seguro de que deseas cerrar sesión?</string>
+
+
+    <!-- Strings for LoginFragment -->
+    <string name="login_title">INICIAR SESIÓN</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+
+
+    <!-- Strings for SigninFragment -->
+    <string name="signin_title">¡BIENVENIDO!</string>
+    <string name="sigin_subtitle">ÚNETE AHORA</string>
+    <string name="account_info">Cuenta:</string>
+    <string name="personal_info">Datos personales:</string>
+    <string name="repeat_password">Repite la contraseña</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellidos</string>
+    <string name="datepicker">Seleccionar fecha de nacimiento</string>
+    <string name="nodate">Fecha sin seleccionar</string>
+    <string name="dni">DNI</string>
+    <string name="telephone">Numero de teléfono</string>
+    <string name="town">Población</string>
+    <string name="postalcode">Código postal</string>
+    <string name="accept">Acepto los </string>
+    <string name="terms"><u>términos y condiciones</u></string>
+    <string name="endsignin">Registrarse</string>
+
+
+    <!-- Strings for ContactusFragment -->
+    <string name="title_contactus">¿Qué tal lo hacemos?</string>
+    <string name="description_contactus">Nos esforzamos constantemente por mejorar la experiencia de los usuarios de <b>FindHome</b>. Por eso, nos encantaría saber qué funciones te gustan más y cuales podríamos mejorar.</string>
+    <string name="also">Además de darnos tu opinión sobre la apliacación de <b>FindHome</b>, aquí podrás ponerte en contacto con un agente por motivos tales como: Comfirmación de tu identidad, cambio de información en la cuenta, repotar abusos/estafas/discriminaciones, informar de algún error en la aplicación, entre otros. </string>
+    <string name="what_want_contactus">¿Qué quieres hacer?</string>
+    <string name="product_contact">Informar sobre un producto</string>
+    <string name="account_contact">Mi cuenta de FindHome</string>
+    <!-- ITEM STRINGS for Spinner PRODUCTS in ContactusFragment -->
+    <string-array name="products">
+        <item>Selecciona:</item>
+        <item>Alquileres</item>
+        <item>Hoteles</item>
+        <item>Top Sitios</item>
+    </string-array>
+
+
+    <!-- Strings for PostrentsFragment -->
+    <string name="title_postrent">PUBLICAR ALQUILER</string>
+    <string name="upload_photos">Subir fotos</string>
+    <string name="info_postrent">Información del hospedaje:</string>
+    <string name="province_postrent">Provincia</string>
+    <string name="town_postrent">Poblacion</string>
+    <string name="street_postrent">Calle</string>
+    <string name="price_postrent">Precio</string>
+    <string name="description_postrent">Descripción</string>
+    <!-- ITEM STRINGS for Spinner KIND OF RENT in PostrentFragment -->
+    <string-array name="kind_rent">
+        <item>Concretando un poco:</item>
+        <item>Apartamento</item>
+        <item>Casa</item>
+        <item>Vivienda anexa</item>
+    </string-array>
+
+
+    <!-- ITEM STRINGS for Spinner Province in SigninFragmen -->
+    <string-array name="provinces">
+        <item>Provincia:</item>
+        <item>Álava</item>
+        <item>Albacete</item>
+        <item>Alicante</item>
+        <item>Almería</item>
+        <item>Asturias</item>
+        <item>Ávila</item>
+        <item>Badajoz</item>
+        <item>Barcelona</item>
+        <item>Burgos</item>
+        <item>Cáceres</item>
+        <item>Cádiz</item>
+        <item>Cantabria</item>
+        <item>Castellón</item>
+        <item>Ciudad Real</item>
+        <item>Córdoba</item>
+        <item>Cuenca</item>
+        <item>Gerona</item>
+        <item>Granada</item>
+        <item>Guadalajra</item>
+        <item>Guipúzcoa</item>
+        <item>Huelva</item>
+        <item>Huesca</item>
+        <item>Islas Baleares</item>
+        <item>Jaén</item>
+        <item>La Coruña</item>
+        <item>La Rioja</item>
+        <item>Las Palmas</item>
+        <item>León</item>
+        <item>Lérida</item>
+        <item>Lugo</item>
+        <item>Navarra</item>
+        <item>Orense</item>
+        <item>Palencia</item>
+        <item>Pontevedra</item>
+        <item>Salamanca</item>
+        <item>Santa Cruz de Tenerife</item>
+        <item>Segovia</item>
+        <item>Sevilla</item>
+        <item>Soria</item>
+        <item>Tarragona</item>
+        <item>Teruel</item>
+        <item>Toledo</item>
+        <item>Valencia</item>
+        <item>Valladolid</item>
+        <item>Vizcaya</item>
+        <item>Zamora</item>
+        <item>Zaragoza</item>
+    </string-array>
+
+
+    <!-- String for Terms and Conditions -->
+    <string name="termsconditions">Lea detenidamente los presentes Términos de Servicio para Usuarios Europeos (“Términos”) ya que contienen información importante acerca de sus derechos legales, recursos y obligaciones. Al acceder a o utilizar la Plataforma de FindHome, usted acepta cumplir y someterse a los presentes Términos.
+
+    Nota: El Apartado 19 de estos Términos contiene una cláusula de arbitraje y de renuncia a demandas colectivas que se aplica a todas las acciones presentadas contra FindHome en Estados Unidos. Esto afecta a la forma en la que se resuelven las disputas con FindHome. Al aceptar estos Términos, admite someterse a dicha cláusula de arbitraje y de renuncia a demandas colectivas. Le rogamos que la lea detenidamente.
+
+Puede acceder a la plataforma de resoluciones de disputas en línea de la Comisión Europea aquí: http://ec.europa.eu/consumers/odr. Tenga en cuenta que FindHome no se compromete ni está obligado a utilizar una entidad de resolución de disputas alternativa para resolver conflictos con los consumidores.
+
+Gracias por utilizar FindHome.
+
+Los presentes Términos constituyen un contrato legalmente vinculante (“Contrato”) entre usted y FindHome (conforme a lo definido a continuación) que rige su acceso y utilización del sitio web de FindHome, incluido cualquier subdominio del mismo, así como de cualquier otro sitio web a través del cual FindHome ponga a disposición sus servicios (denominados, conjuntamente, el “Sitio Web”), nuestras aplicaciones para móvil, tableta y demás dispositivos inteligentes, así como interfaces de programa de aplicaciones (denominadas, conjuntamente, la “Aplicación”) y todos los servicios asociados (denominados, conjuntamente, los “Servicios de FindHome”). En adelante, el Sitio web, la Aplicación y los Servicios FindHome se denominarán, conjuntamente, la “Plataforma FindHome”. Nuestros Términos de Garantía al Anfitrión, la Política de Reembolso al Huésped, Política Contra la Discriminación, y demás Políticas aplicables a su utilización de la Plataforma FindHome, se incorporan por referencia al presente Contrato.
+
+Cuando estos Términos utilizan “FindHome”, “nosotros”, “nos”, o “nuestro” (y otras variaciones incluidas), se refieren a FindHome Ireland UC (“FindHome Ireland”), The Watermarque Building, South Lotts Road, Ringsend, Dublin 4, Ireland.
+
+Si cambia de país de residencia o establecimiento, a un país que se encuentra fuera del AEE, la sociedad FindHome con la que suscribe el Contrato y los Términos de Servicio aplicables estarán determinados por su nuevo país de residencia o establecimiento conforme a los Términos de Servicio para Usuarios No Europeos, desde la fecha en que varíe su país de residencia o establecimiento.
+
+Nuestra recogida y uso de información personal en relación con su acceso y utilización de la Plataforma FindHome se describe en nuestra Política de Privacidad.
+
+Todos y cualesquiera servicios de procesamiento de pagos a través o en relación con el uso de la Plataforma FindHome (“Servicios de pago”) se proporcionan por una o más entidades de Pagos FindHome (en adelante, de forma individual y colectiva, según proceda, los “Pagos FindHome”) conforme a lo dispuesto en los Términos de servicios de pago (“Términos de pago”).
+
+Los Anfitriones serán responsables en exclusiva de identificar, entender y cumplir todas las leyes, normas y reglamentaciones que se aplican a sus Anuncios y Servicios de Anfitrión (según se define a continuación). Por ejemplo, algunas ciudades tienen leyes que restringen su capacidad para acoger a huéspedes de pago durante períodos cortos o para prestar ciertos Servicios de Anfitrión. En numerosas ciudades, es posible que los Anfitriones deban registrarse, obtener permisos o conseguir licencias antes de prestar ciertos Servicios de Anfitrión (como preparar alimentos, ofrecer alcohol para su venta, realizar visitas guiadas o conducir un vehículo). Los Anfitriones serán los únicos responsables de identificar y obtener cualquier licencia, permiso o registro necesarios para cualquier experiencia que ofrezcan. Es posible que ciertos tipos de Servicios de Anfitrión estén prohibidos completamente. Las penalizaciones pueden ir desde multas a otros tipos de imposiciones. Nosotros ofrecemos cierta información en nuestro Centro de Ayuda para ayudarle a identificar algunas de las obligaciones que le son de aplicación. Si tiene alguna pregunta sobre cómo se aplica la legislación local a su(s) Anuncio(s) y Servicio(s) de anfitrión en FindHome, debe recurrir siempre a un servicio de orientación jurídica.</string>
+
+
+</resources>

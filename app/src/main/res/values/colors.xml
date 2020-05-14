@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Menu Colors -->
+    <color name="firstColorMenu">#71d65a</color> <!-- ALTERNATIVE COLOR #9CF0A5 -->
+    <color name="firstDarkColorMenu">#4e7338</color>
+    <color name="accentColor">#D27BE8C2</color>
+    <color name="textColor">#ffffff</color>
+
+    <!-- Card Settings -->
+    <color name="cardColor">#5FFFFFFF</color>
+    <color name="circleColor">#FF0000</color>
+    <color name="ratingbarColor">#DDFFEB3B</color>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rents"
+            android:icon="@drawable/alquileres"
+            android:title="@string/menu_alquileres" />
+        <item
+            android:id="@+id/nav_postrent"
+            android:icon="@android:drawable/stat_sys_upload_done"
+            android:title="@string/menu_upload" />
+        <item
+            android:id="@+id/nav_hotels"
+            android:icon="@drawable/hoteles"
+            android:title="@string/menu_hotels" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/topsites"
+            android:title="@string/menu_topsites" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/contactus"
+            android:title="@string/menu_contactus" />
+
+    </group>
+
+    <item android:title="@string/separation_line">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/login"
+                android:title="@string/menu_login" />
+            <item
+                android:id="@+id/nav_signin"
+                android:icon="@drawable/adduser"
+                android:title="@string/menu_signin" />
+            <item
+                android:id="@+id/nav_userdetail"
+                android:icon="@drawable/settings"
+                android:title="@string/menu_userdetail" />
+        </menu>
+    </item>
+
+</menu>

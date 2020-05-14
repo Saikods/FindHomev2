@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_rents">
+
+    <fragment
+        android:id="@+id/nav_rents"
+        android:name="com.joseluis.findhomev2.ui.rents.RentFragment"
+        android:label="@string/menu_alquileres"
+        tools:layout="@layout/fragment_rent" />
+
+    <fragment
+        android:id="@+id/nav_postrent"
+        android:name="com.joseluis.findhomev2.ui.postrent.PostrentFragment"
+        android:label="@string/menu_upload"
+        tools:layout="@layout/fragment_postrent" />
+
+    <fragment
+        android:id="@+id/nav_hotels"
+        android:name="com.joseluis.findhomev2.ui.hotels.HotelFragment"
+        android:label="@string/menu_hotels"
+        tools:layout="@layout/fragment_hotels" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.joseluis.findhomev2.ui.tools.ToolsFragment"
+        android:label="@string/menu_topsites"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.joseluis.findhomev2.ui.login.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_signin"
+        android:name="com.joseluis.findhomev2.ui.sigin.SigninFragment"
+        android:label="@string/menu_signin"
+        tools:layout="@layout/fragment_signin" />
+
+    <fragment
+        android:id="@+id/nav_infor"
+        android:name="com.joseluis.findhomev2.ui.inforents.InforentsFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_inforents"/>
+
+    <fragment
+        android:id="@+id/nav_userdetail"
+        android:name="com.joseluis.findhomev2.ui.userdetail.UserdetailFragment"
+        android:label="@string/menu_userdetail"
+        tools:layout="@layout/fragment_userdetail" />
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.joseluis.findhomev2.ui.contactus.ContactusFragment"
+        android:label="@string/menu_contactus"
+        tools:layout="@layout/fragment_contactus" />
+
+
+</navigation>
