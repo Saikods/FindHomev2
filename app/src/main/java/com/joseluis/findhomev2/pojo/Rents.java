@@ -42,6 +42,8 @@ public class Rents implements Parcelable {
     }
 
     public Rents() {
+        images = new ArrayList<>();
+        extras = new ArrayList<>();
     }
 
 

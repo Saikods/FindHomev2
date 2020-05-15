@@ -104,6 +104,8 @@ public class PostrentFragment extends Fragment {
     private FirebaseAuth auth;
     private FirebaseUser user;
 
+    Rents rent;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         postrentViewModel =
@@ -142,6 +144,8 @@ public class PostrentFragment extends Fragment {
 
         recyclerView.setAdapter(adapter);
 
+        rent = new Rents();
+
 
         permisos = new String[]{Manifest.permission.READ_EXTERNAL_STORAGE};
         btnChooseImages.setOnClickListener(new View.OnClickListener() {
@@ -168,45 +172,20 @@ public class PostrentFragment extends Fragment {
 
                 FirebaseStorage storage = FirebaseStorage.getInstance();
 
-                final StorageReference imagesRef = storage.getReference().child("rentsPosted/");
+                //final StorageReference imagesRef = storage.getReference().child("rentsPosted/");
 
-                for(int upload_count = 0; upload_count < mArrayUri.size(); upload_count++){
-
-                    Uri individualImage = mArrayUri.get(upload_count);
-                    final StorageReference imageName = imagesRef.child("Image"+individualImage.getLastPathSegment());
-
-                    imageName.putFile(individualImage).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                        @Override
-                        public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                            imageName.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                @Override
-                                public void onSuccess(Uri uri) {
-                                    downloadUrl = uri.toString();
-
-                                }
-                            });
-                            refRents.push().child("images").setValue(downloadUrl).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull Task<Void> task) {
-                                    if(task.isSuccessful()){
-                                        Toast.makeText(getActivity(), "Subida completada", Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
-
-
-
-                        }
-                    });
-
-                    Navigation.findNavController(v).navigate(R.id.nav_rents);
-
+                for (String imagen : rent.getImages()){
+                    Log.d("IMAGENES", imagen);
                 }
+
+
 
                 //Rents rent = new Rents(txtStreetName.getText().toString(), txtProvince.getText().toString(), txtTown.getText().toString(), txtDescription.getText().toString(), 0, Integer.parseInt(txtPrice.getText().toString()), auxUri);
 
+                rent.setDescription();
 
-
+                refRents.child(user.getEmail()).push().setValue(rent);
+                Navigation.findNavController(v).navigate(R.id.nav_rents);
             }
         });
 
@@ -272,8 +251,6 @@ public class PostrentFragment extends Fragment {
                             int columnIndex = cursorMult.getColumnIndex(filePathColumn[0]);
                             imageEncoded = cursorMult.getString(columnIndex);
                             cursorMult.close();
-
-
                         }
                         Log.v("MainActivity", "Selected Images" + mArrayUri.size());
                         adapter.notifyDataSetChanged();
@@ -289,6 +266,8 @@ public class PostrentFragment extends Fragment {
 
         if (mArrayUri.size() > 0) {
             imgZero.setVisibility(GONE);
+            uploadImages();
+            Log.d("IMAGENES", "Tengo imagenes a subir");
         }
 
 
@@ -301,12 +280,13 @@ public class PostrentFragment extends Fragment {
         }
     }
 
+    int upload_count = 0;
     private void uploadImages() {
         FirebaseStorage storage = FirebaseStorage.getInstance();
 
         final StorageReference imagesRef = storage.getReference().child("rentsPosted/");
 
-        for(int upload_count = 0; upload_count < mArrayUri.size(); upload_count++){
+        for( int upload_count = this.upload_count; upload_count < mArrayUri.size(); upload_count++){
 
             Uri individualImage = mArrayUri.get(upload_count);
             final StorageReference imageName = imagesRef.child("Image"+individualImage.getLastPathSegment());
@@ -320,13 +300,13 @@ public class PostrentFragment extends Fragment {
                            String urlImage = uri.toString();
                            urlImages.add(urlImage);
 
-
-                           refRents.setValue(urlImage);
-
+                           rent.getImages().add(urlImage);
+                            Log.d("IMAGENES", "subida imagen: "+urlImage);
                        }
                    });
                 }
             });
+            this.upload_count = mArrayUri.size();
         }
 
     }
